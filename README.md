@@ -1,0 +1,2 @@
+# leetcode-scala
+Leetcode scala
