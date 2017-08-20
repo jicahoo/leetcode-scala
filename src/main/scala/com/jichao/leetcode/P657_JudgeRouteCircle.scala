@@ -1,9 +1,9 @@
-package P657_JudgeRouteCircle
+package com.jichao.leetcode
 
-object Solution {
+object P657_JudgeRouteCircle {
     def judgeCircle(moves: String): Boolean = {
       val charCount = moves.groupBy(identity).mapValues(_.length)
-      def extractSome(some : Option[Int]): Int ={
+      def extractSome(some : Option[Int]): Int = {
         some match {
           case Some(v) => v
           case _ => 0
