@@ -7,3 +7,4 @@ Leetcode scala
 * https://alvinalexander.com/downloads/scala/Scala-Cheat-Sheet-devdaily.pdf
 * https://github.com/lampepfl/progfun-wiki/blob/gh-pages/CheatSheet.md
 * https://mbonaci.github.io/scala/
+* https://docs.scala-lang.org/cheatsheets/
