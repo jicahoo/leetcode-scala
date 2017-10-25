@@ -30,6 +30,11 @@ Leetcode scala
 * 不用Break, 用takeWhile可以替代。
 * 递归的思想，函数编程更喜欢递归，正常情况下，C语言的递归也无副作用。递归的这种特征和函数编程很一致。是吗？
 
+## 基于Scala构建的产品
+* Apache Spark让Scala名声大噪。
+* Twitter和Linkin用Scala构造出一些很不错了产品。 LinkedIn的消息系统Kafka （据说代码写的漂亮）, Twitter的RPC调用框架Finagle, 分布式链路跟踪框架zipkin。
+* https://www.zhihu.com/question/28809372
+* https://github.com/lauris/awesome-scala
 ## Scala与Python对比
 没有买卖就没有杀害，没有对比就没有伤害。有对比，才能以批判的角度看待Scala。
 * List按下标获取元素。 Python更方便。list.head vs list[0], list.tail vs list[1:], list.last vs list[-1], list.init vs list[:-1].
