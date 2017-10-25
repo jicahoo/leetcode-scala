@@ -30,3 +30,7 @@ Leetcode scala
 * 不要mutable，用了mutable，就会倾向于老式的思想。
 * 不用Break, 用takeWhile可以替代。
 * 递归的思想，函数编程更喜欢递归，正常情况下，C语言的递归也无副作用。递归的这种特征和函数编程很一致。是吗？
+
+## Scala与Python对比
+没有买卖就没有杀害，没有对比就没有伤害。有对比，才能以批判的角度看待Scala。
+* List按下标获取元素。 Python更方便。list.head vs list[0], list.tail vs list[1:], list.last vs list[-1], list.init vs list[:-1].
