@@ -38,3 +38,6 @@ Leetcode scala
 ## Scala与Python对比
 没有买卖就没有杀害，没有对比就没有伤害。有对比，才能以批判的角度看待Scala。
 * List按下标获取元素。 Python更方便。list.head vs list[0], list.tail vs list[1:], list.last vs list[-1], list.init vs list[:-1].
+
+## Effective Scala (from twitter)
+* http://twitter.github.io/effectivescala/
