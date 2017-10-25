@@ -31,7 +31,7 @@ Leetcode scala
 * 递归的思想，函数编程更喜欢递归，正常情况下，C语言的递归也无副作用。递归的这种特征和函数编程很一致。是吗？
 
 ## 基于Scala构建的产品
-* Apache Spark让Scala名声大噪。
+* Apache Spark让Scala名声大噪。Akka，用Actor Model构造高并发，容错，可伸缩的，自愈的，高性能的系统。
 * Twitter和Linkin用Scala构造出一些很不错了产品。 LinkedIn的消息系统Kafka （据说代码写的漂亮）, Twitter的RPC调用框架Finagle, 分布式链路跟踪框架zipkin。
 * https://www.zhihu.com/question/28809372
 * https://github.com/lauris/awesome-scala
