@@ -32,7 +32,7 @@ Leetcode scala
 
 ## 基于Scala构建的产品
 * Apache Spark让Scala名声大噪。Akka，用Actor Model构造高并发，容错，可伸缩的，自愈的，高性能的系统。
-* Twitter和Linkin用Scala构造出一些很不错了产品。 LinkedIn的消息系统Kafka （据说代码写的漂亮, 主要还是Java,30%是Scala）, Twitter的RPC调用框架Finagle.
+* Twitter和Linkin用Scala构造出一些很不错了产品。 LinkedIn的消息系统Kafka （据说代码写的漂亮, 主要还是Java,30%是Scala, 不过，core是scala写的）, Twitter的RPC调用框架Finagle.
 * https://www.zhihu.com/question/28809372
 * https://github.com/lauris/awesome-scala
 ## Scala与Python对比
