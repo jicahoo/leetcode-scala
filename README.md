@@ -41,3 +41,4 @@ Leetcode scala
 
 ## Effective Scala (from twitter)
 * http://twitter.github.io/effectivescala/
+* http://twitter.github.io/scala_school/ 
