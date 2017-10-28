@@ -30,6 +30,15 @@ Leetcode scala
 * 不用Break, 用takeWhile可以替代。
 * 递归的思想，函数编程更喜欢递归，正常情况下，C语言的递归也无副作用。递归的这种特征和函数编程很一致。是吗？
 
+## Class object-oriented.
+* case class
+* implicit class
+
+## meta programming
+* reflection
+* metaprogramming
+* quasi-quotation
+
 ## 基于Scala构建的产品
 * Apache Spark让Scala名声大噪。Akka，用Actor Model构造高并发，容错，可伸缩的，自愈的，高性能的系统。
 * Twitter和Linkin用Scala构造出一些很不错了产品。 LinkedIn的消息系统Kafka （据说代码写的漂亮, 主要还是Java,30%是Scala, 不过，core是scala写的）, Twitter的RPC调用框架Finagle.
