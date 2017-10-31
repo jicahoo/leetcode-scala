@@ -39,6 +39,8 @@ Leetcode scala
 
 ## for-comprehension
 * TODO
+
+## 处理错误，Exception, == null, Not found.
 ## Class object-oriented.
 * case class
 * implicit class
