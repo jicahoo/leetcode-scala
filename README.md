@@ -32,6 +32,9 @@ Leetcode scala
 * 不用Break, 用takeWhile可以替代。
 * 递归的思想，函数编程更喜欢递归，正常情况下，C语言的递归也无副作用。递归的这种特征和函数编程很一致。是吗？
 
+## Map
+* map.getOrElse() 解决在构建Map时的常见痛点。
+
 ## Class object-oriented.
 * case class
 * implicit class
