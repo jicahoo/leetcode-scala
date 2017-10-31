@@ -37,6 +37,8 @@ Leetcode scala
 ## Map
 * map.getOrElse() 解决在构建Map时的常见痛点。
 
+## for-comprehension
+* TODO
 ## Class object-oriented.
 * case class
 * implicit class
