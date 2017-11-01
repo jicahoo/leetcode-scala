@@ -42,7 +42,7 @@ Leetcode scala
 ## Scala中常用的缩写
 * x 单个元素，可能与数学有关。y=f(x)
 * xs 多个元素, 一般是list.tail的部分
-* p: predicate
+* p: predicate 常做参数名称。
 * c: collection
 
 
