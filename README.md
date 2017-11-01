@@ -22,7 +22,11 @@ Leetcode scala
  * Performance
  * 练习体会
  * 实际项目
- 
+
+## 思想或者目标
+* 减少程序的复杂度，让编译器做更多工作。
+* 函数式编程的一些概念和设计，譬如说，不变量，无副作用的函数，这是对函数和值引用的一些约束，有了这些约束，一方面，人就更容易推理或者预测程序的行为；另一方面，这些约束也可以为机器所利用，有了这些约束，某些计算是不是可以并行计算。
+
 ## Scala
 * http://exercism.io/exercises/scala/sieve/readme
 * http://exercism.io/submissions/0edc95b2e4a84d61a02942b52914d20c
@@ -61,6 +65,9 @@ Leetcode scala
 
 ## Map
 * map.getOrElse() 解决在构建Map时的常见痛点。
+
+## 请问函数作为一等公民有那些体现？
+* compose 函数和函数间的运算。
 
 ## for-comprehension
 * TODO
