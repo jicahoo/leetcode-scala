@@ -9,6 +9,11 @@ Leetcode scala
 * https://mbonaci.github.io/scala/
 * https://docs.scala-lang.org/cheatsheets/
 
+## 概念定义或体系
+* 把函数理解为一个计算逻辑。或者就理解为数学上的函数定义。集合->映射->函数. 不管，你具体怎么做的，只要映射一致，你们就是相同的函数。所以，函数更关心结果不关心过程。
+
+* 函数可以认为是一个计算逻辑。特例，表达式
+
 ## 编程语言研究方法论
 * 静态分析。
  * 直接看DevelopmentKit的源代码。
