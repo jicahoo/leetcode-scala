@@ -10,11 +10,18 @@ Leetcode scala
 * https://docs.scala-lang.org/cheatsheets/
 
 ## 编程语言研究方法论
-* 静态分析。直接看DevelopmentKit的源代码。
+* 静态分析。
+ * 直接看DevelopmentKit的源代码。
+ * 看背后思想，发展历史。
+ * 搞清楚语言内核
+ * 和其他相关语言，对比分析
+ 
 * 动态分析
  * Debug.
  * println/log. println 是利器。能比较快捷和清除地搞清楚我们所关系的执行顺序，某个执行点的上下文（相关变量的值）
  * Performance
+ * 练习体会
+ * 实际项目
  
 ## Scala
 * http://exercism.io/exercises/scala/sieve/readme
