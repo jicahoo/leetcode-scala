@@ -11,7 +11,7 @@ Leetcode scala
 
 ## 编程语言研究方法论
 * 静态分析。直接看DevelopmentKit的源代码。
-* 动态分析。
+* 动态分析
  * Debug.
  * println/log. println 是利器。能比较快捷和清除地搞清楚我们所关系的执行顺序，某个执行点的上下文（相关变量的值）
  * Performance
