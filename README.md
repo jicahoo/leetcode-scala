@@ -18,7 +18,7 @@ Leetcode scala
  
 * 动态分析
  * Debug.
- * println/log. println 是利器。能比较快捷和清除地搞清楚我们所关系的执行顺序，某个执行点的上下文（相关变量的值）
+ * **println/log. println 是利器。能比较快捷和清除地搞清楚我们所关系的执行顺序，某个执行点的上下文（相关变量的值）**
  * Performance
  * 练习体会
  * 实际项目
