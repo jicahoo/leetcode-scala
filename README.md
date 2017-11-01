@@ -60,7 +60,29 @@ Leetcode scala
 ## 2017/11/01 心得
 * 今天，我又刷了题目http://exercism.io/tracks/scala/exercises/meetup, 记一下刷后感。
 * 在Debug的时候，发现IntelliJ IDEA可以在匿名函数处设置断点，譬如说，list.find(\_ > 0)，那么，就可以在 \_ > 0处设置断点。
-* 认识到
+* Range.slice 和 List.slice 是不一样的，前者是lazy的，后者是eager的
+* List.withFilter是lazy的，返回值具有FilterMondadic trait. withFilter就可以组合了: https://alvinalexander.com/scala/examples-shows-differences-between-strict-lazy-evaluation-in-scala
+```scala
+object Test1WithFilterLazy extends App {
+
+    def lessThan30(i: Int): Boolean = {
+        println(s"\n$i less than 30?")
+        i < 30
+    } 
+
+    def moreThan20(i: Int): Boolean = {
+        println(s"$i more than 20?")
+        i > 20
+    } 
+
+    val a = List(1, 25, 40, 5, 23)
+    val q0 = a.withFilter(lessThan30)
+    val q1 = q0.withFilter(moreThan20)
+    for (r <- q1) println(s"$r")
+
+}
+```
+
 
 ## Scala中常用的缩写
 * x 单个元素，可能与数学有关。y=f(x)
