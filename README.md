@@ -69,6 +69,7 @@ Leetcode scala
 
 ## 请问函数作为一等公民有那些体现？
 * compose 函数和函数间的运算。
+* curry. 函数可以按参数分解或者说降维，编程某些参数固定的函数。
 
 ## for-comprehension
 * TODO
