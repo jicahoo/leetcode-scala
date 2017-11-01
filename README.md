@@ -34,6 +34,18 @@ Leetcode scala
 * 不用Break, 用takeWhile可以替代。
 * 递归的思想，函数编程更喜欢递归，正常情况下，C语言的递归也无副作用。递归的这种特征和函数编程很一致。是吗？
 
+## 2017/11/01 心得
+* 今天，我又刷了题目http://exercism.io/tracks/scala/exercises/meetup, 记一下刷后感。
+* 在Debug的时候，发现IntelliJ IDEA可以在匿名函数处设置断点，譬如说，list.find(\_ > 0)，那么，就可以在 \_ > 0处设置断点。
+* 认识到
+
+## Scala中常用的缩写
+* x 单个元素，可能与数学有关。y=f(x)
+* xs 多个元素, 一般是list.tail的部分
+* p: predicate
+* c: collection
+
+
 ## Map
 * map.getOrElse() 解决在构建Map时的常见痛点。
 
