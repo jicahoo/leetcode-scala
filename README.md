@@ -76,6 +76,31 @@ Leetcode scala
 * 函数可以作为参数。
 * compose 函数和函数间的运算。
 * curry. 函数可以按参数分解或者说降维，编程某些参数固定的函数。
+* 举个例子，
+```scala
+object TryScala {
+
+  def main(args: Array[String]): Unit = {
+    println("Hello")
+    val x = (1 to 10).map(add(1)).map(square)
+    val y = (1 to 10).map(square _ compose add(1))
+    println(x)
+    println(y)
+    println(s"x == y? ${x==y}")
+  }
+
+  def add(x: Int)(y: Int): Int = {
+    println(s"$x + $y")
+    x + y
+  }
+
+  def square(x: Int): Int = {
+   println(s"$x*$x")
+    x * x
+  }
+}
+```
+
 
 ## for-comprehension
 * TODO
