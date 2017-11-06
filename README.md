@@ -92,6 +92,7 @@ object Test1WithFilterLazy extends App {
 
 ## Scala的类型系统
 * Scala AnyRef == Java Object ( In Scala, Any <- AnyRef, Any <- AnyVal)
+* http://chariotsolutions.com/wp-content/uploads/2016/04/HeatherMiller.pdf
 
 ## Map
 * map.getOrElse() 解决在构建Map时的常见痛点。
