@@ -90,6 +90,8 @@ object Test1WithFilterLazy extends App {
 * p: predicate 常做参数名称。
 * c: collection
 
+## Scala的类型系统
+* Scala Any = Java Object
 
 ## Map
 * map.getOrElse() 解决在构建Map时的常见痛点。
