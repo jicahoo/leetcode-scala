@@ -93,6 +93,9 @@ object Test1WithFilterLazy extends App {
 ## Scala的类型系统
 * Scala AnyRef == Java Object ( In Scala, Any <- AnyRef, Any <- AnyVal)
 * http://chariotsolutions.com/wp-content/uploads/2016/04/HeatherMiller.pdf
+* 顺便复习了一下，Java的super和extends. 举例说明，  <? entends Number> 代表是**某个**继承自Number的类，<? super NaturalNumber>代表的是Number的某个祖先类，可能是父类，也可能是父类的父类。两者的区别
+ * <? extends Number>你可以想象成树结构，以Number为子节点的树结构。 ? 是集合 {Number, Number的子节点}中的某个元素，?的取值空间就是一个树形结构。List<? extends Number>存放的一定是
+ * <? super NaturalNumber>你可以想象成线性结构或者说一条直线, 是由NaturalNumber祖先构成的直线。?是集合{NaturalNumber, NaturalNumber的祖先节点}中的某个元素。?的取值空间就在一条直线上。所以,?的取值一定是自身或者祖先，那么， NaturalNumber一定是?的子类。所以说，NaturalNumber类型的对象一定能放入到List<? super NaturalNumber>中。
 
 ## Map
 * map.getOrElse() 解决在构建Map时的常见痛点。
