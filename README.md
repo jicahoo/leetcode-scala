@@ -94,8 +94,19 @@ object Test1WithFilterLazy extends App {
 * Scala AnyRef == Java Object ( In Scala, Any <- AnyRef, Any <- AnyVal)
 * http://chariotsolutions.com/wp-content/uploads/2016/04/HeatherMiller.pdf
 * 顺便复习了一下，Java的super和extends. 举例说明，  <? entends Number> 代表是**某个**继承自Number的类，<? super NaturalNumber>代表的是Number的某个祖先类，可能是父类，也可能是父类的父类。两者的区别
- * <? extends Number>你可以想象成树结构，以Number为子节点的树结构。 ? 是集合 {Number, Number的子节点}中的某个元素，?的取值空间就是一个树形结构。List<? extends Number>存放的一定是Number某个子类，你不能往里存新的元素，因为从<? extends Number>这个说明中，你无从得知它里面具体是什么类。但你取出的元素满足约束：它一定是Number的子类，你可以按照Number的方式操作其中的元素，消费其中的元素。
- * <? super NaturalNumber>你可以想象成线性结构或者说一条直线, 是由NaturalNumber祖先构成的直线。?是集合{NaturalNumber, NaturalNumber的祖先节点}中的某个元素。?的取值空间就在一条直线上。所以,?的取值一定是自身或者祖先，那么， NaturalNumber一定是?的子类。所以说，NaturalNumber类型的对象一定能放入到List<? super NaturalNumber>中。 
+ * <? extends Number>你可以想象成树结构，以Number为子节点的树结构。 ? 是集合 {Number, Number的子节点}中的某个元素，?的取值空间就是一个树形结构。List<? extends Number>存放的一定是Number某个子类，你不能往里存新的元素，因为从<? extends Number>这个说明中，你无从得知它里面具体是什么类。但你取出的元素满足约束：它一定是Number的子类，你可以按照Number的方式操作其中的元素，消费其中的元素。读出的东西有保证，有约束；无法确定什么类型的可以写入。
+ * <? super NaturalNumber>你可以想象成线性结构或者说一条直线, 是由NaturalNumber祖先构成的直线。?是集合{NaturalNumber, NaturalNumber的祖先节点}中的某个元素。?的取值空间就在一条直线上。所以,?的取值一定是自身或者祖先，那么， NaturalNumber一定是?的子类。所以说，NaturalNumber类型的对象一定能放入到List<? super NaturalNumber>中。 读出的东西没有保证和约束，可能是任意的祖先节点；但是，写入NaturalNumber的时候，能够保证可以，因为具体类型是其某个祖先。
+ 
+ * 一个经典例子
+ ```java
+ //https://stackoverflow.com/questions/4343202/difference-between-super-t-and-extends-t-in-java
+ public class Collections { 
+  public static <T> void copy(List<? super T> dest, List<? extends T> src) {
+      for (int i = 0; i < src.size(); i++) 
+        dest.set(i, src.get(i)); 
+  } 
+}
+ ```
 
 ## Map
 * map.getOrElse() 解决在构建Map时的常见痛点。
