@@ -16,6 +16,9 @@ Leetcode scala
 * 代数类型
 * 模式匹配
 * 伴生对象
+## 非常有用的资料
+* http://docs.scala-lang.org/tutorials/FAQ/index.html
+
 
 ## 概括Scala的资料
 * 前言: http://scala-lang.org/files/archive/spec/2.12/
