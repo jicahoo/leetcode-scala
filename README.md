@@ -13,6 +13,7 @@ Leetcode scala
 * 函数一等公民
 * 鸭子类型
 * 尾递归
+* 代数类型
 
 ## 概括Scala的资料
 * 前言: http://scala-lang.org/files/archive/spec/2.12/
