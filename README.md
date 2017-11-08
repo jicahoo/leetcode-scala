@@ -10,6 +10,12 @@ Leetcode scala
 * https://docs.scala-lang.org/cheatsheets/
 ## Keywords or tags
 * 列表解析式
+* 函数一等公民
+* 鸭子类型
+* 尾递归
+
+## 概括Scala的资料
+* 前言: http://scala-lang.org/files/archive/spec/2.12/
 
 ## 列表解析式是如何工作的
 * http://docs.scala-lang.org/tutorials/FAQ/yield.html
