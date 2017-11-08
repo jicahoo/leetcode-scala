@@ -27,6 +27,7 @@ Leetcode scala
 
 ## 非常有用的资料
 * http://docs.scala-lang.org/tutorials/FAQ/index.html
+* http://docs.scala-lang.org/overviews/core/architecture-of-scala-collections.html 对于Scala Collection 架构的官方介绍。
 
 
 ## 概括Scala的资料
