@@ -1,6 +1,9 @@
 # leetcode-scala
 Leetcode scala
 
+## Scala的世界观
+* Scala是如何看待编程和其中的问题的。Scala的目标，Scala的手段，Scala的效果。
+
 # Scala warm-up:
 * https://jaxenter.com/cheat-sheet-complete-guide-scala-136558.html
 * http://rea.tech/java-to-scala-cheatsheet/
