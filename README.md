@@ -15,6 +15,7 @@ Leetcode scala
 * 尾递归
 * 代数类型
 * 模式匹配
+* 伴生对象
 
 ## 概括Scala的资料
 * 前言: http://scala-lang.org/files/archive/spec/2.12/
