@@ -36,6 +36,19 @@ Leetcode scala
 * 闭包没什么，闭包可以做的事情，你创建个类一样，可以做。闭包，有些时候，你的函数依赖于外部变量，你就学要他。如果，不支持，写程序就比较麻烦。
 * https://www.artima.com/pins1ed/functions-and-closures.html
 * 持续理解
+* 我造个例子,  你有账户的钱用一个变量表示。有人不停的给你转账，1万，2万，3万...,你的加到你的账户里。
+```scala
+scala> var myMoney = 100
+myMoney: Int = 100
+
+scala> def addMoney(more:Int) = {myMoney += more }     //这就是个闭包，负责给我加钱的逻辑
+addMoney: (more: Int)Unit
+
+scala> Range(1,10).foreach{  addMoney(_) }
+
+scala> myMoney  //钱到帐了，哈哈
+res27: Int = 145
+```
 
 ## 概括Scala的资料
 * 前言: http://scala-lang.org/files/archive/spec/2.12/
