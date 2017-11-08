@@ -150,6 +150,9 @@ object TryScala {
     * Nothing在构造一些零元的时候非常重要。没有Nothing你是无法构造零元。最好的例子就是Nil就是List[T]的零元。Nil是一个object，类型是List[Nothing]. 而List是协变的, 所以，Nil可以看作是任何类型T对应的List[T]的子类的实例。所以，你做操作, 1::Nil, "AA"::Nil都是合理。这就是零元，他要和相关的任何类型都能兼容。在这个设计中，如果没有Nohting，你是不可以构造出零元的。而零元是什么，为什么需要这个元，请看下一节的解释。
     * 之所以需要零元，因为函数式编程语言常常用递归来构造数据结构，而递归的终点就是零元。上面说的List[T]就是一个例子, List[T]的定义就是递归的。但任何递归总有结束的时候，List的递归就是要到一个空的List.而空的List就是递归的终点，就是我的Nil.
 
+## 类型系统，面向对象
+### 鸭子类型
+* https://dzone.com/articles/duck-typing-scala-structural
 
 ## 处理错误，Exception, == null, Not found.
 ## Class object-oriented.
