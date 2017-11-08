@@ -17,6 +17,9 @@ Leetcode scala
 * 模式匹配
 * 伴生对象
 * Non-Strict (lazy), Strict, WithFilter. 
+* 不可变性
+* 闭包
+* Monad
 
 ## Scala的坑
 * http://docs.scala-lang.org/tutorials/FAQ/yield.html 的最后部分，Range(1,10).xxx 和 List(1,10).xxx 会返回不同的结果。
