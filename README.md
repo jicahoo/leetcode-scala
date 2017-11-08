@@ -49,6 +49,8 @@ scala> Range(1,10).foreach{  addMoney(_) }
 scala> myMoney  //钱到帐了，哈哈
 res27: Int = 145
 ```
+× 如果闭包抓到的是val, 是没有多大意思的，和普通函数没区别。
+* 关键的问题，为什么不把这个变量以参数的形式传进去。上面的例子是，我传进去是达不到效果的。
 
 ## 概括Scala的资料
 * 前言: http://scala-lang.org/files/archive/spec/2.12/
