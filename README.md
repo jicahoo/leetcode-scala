@@ -16,6 +16,12 @@ Leetcode scala
 * 代数类型
 * 模式匹配
 * 伴生对象
+* Non-Strict (lazy), Strict, WithFilter. 
+
+## Scala的坑
+* http://docs.scala-lang.org/tutorials/FAQ/yield.html 的最后部分，Range(1,10).xxx 和 List(1,10).xxx 会返回不同的结果。
+* 对于FP的批判：http://queue.acm.org/detail.cfm?ref=rss&id=2611829&utm_content=bufferb88da 貌似作者挑一个奇怪的例子，不一定站得住脚。
+
 ## 非常有用的资料
 * http://docs.scala-lang.org/tutorials/FAQ/index.html
 
