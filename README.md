@@ -61,6 +61,10 @@ res27: Int = 145
 * 程序的本质就是如何组织数据和计算逻辑，而计算逻辑和数据是要交互，计算逻辑是要依据数据做计算，并改变数据。所以，闭包就是和数据联系起来的计算逻辑，类也是将数据和计算联系起来了，只是出发点不同，类的角度是带有计算逻辑的数据，从数据出发，所以，类先有变量成员，再有方法成员；而闭包是带有数据的计算逻辑，从函数出发。JavaScript就可以用闭包来模拟面向对象的特性。会JavaScript的人更能深刻理解闭包。(找JavaScript的人求证？)
 * 闭包能做的事情，用其他工具或者概念也能做，只是会比较麻烦。期待举个例子？
 
+## 模式匹配与ADT
+* Refer: https://pawelwlodarski.gitbooks.io/functional-programming/content/workshop_-_adt.html
+* 可以做模式匹配的类型：原始类型，case class, ADT. apply & unapply?
+
 ## 概括Scala的资料
 * 前言: http://scala-lang.org/files/archive/spec/2.12/
 
