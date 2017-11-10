@@ -5,6 +5,7 @@ Leetcode scala
 * Scala是如何看待编程和其中的问题的。Scala的目标，Scala的手段，Scala的效果。
 * 能在编译期做的约束和检查，就不要延迟到运行时。例如，ADT
 
+
 # Scala warm-up:
 * https://jaxenter.com/cheat-sheet-complete-guide-scala-136558.html
 * http://rea.tech/java-to-scala-cheatsheet/
@@ -28,6 +29,7 @@ Leetcode scala
 ## 代数数据类型
 * https://scalerablog.wordpress.com/2016/10/03/algrebraic-data-types-in-scala/
 * https://wiki.haskell.org/Algebraic_data_type
+* https://pawelwlodarski.gitbooks.io/functional-programming/content/
 
 ## Scala的坑
 * http://docs.scala-lang.org/tutorials/FAQ/yield.html 的最后部分，Range(1,10).xxx 和 List(1,10).xxx 会返回不同的结果。
