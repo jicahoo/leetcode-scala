@@ -226,6 +226,10 @@ object TryScala {
 * trait与抽象类? (https://stackoverflow.com/questions/32958972/trait-vs-abstract-class-in-scala) Try scalac -print
  * extends trait  == extends object with trait
  * extends abstract clss == extends abstatract class extends object
+ 
+## 并发
+* synchronized.this 
+* https://twitter.github.io/scala_school/concurrency.html
 
 ## 处理错误，Exception, == null, Not found.
 ## Class object-oriented.
