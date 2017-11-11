@@ -223,7 +223,9 @@ object TryScala {
 * https://dzone.com/articles/duck-typing-scala-structural
 
 ### 继承trait
-* trait与抽象类?
+* trait与抽象类? (https://stackoverflow.com/questions/32958972/trait-vs-abstract-class-in-scala) Try scalac -print
+ * extends trait  == extends object with trait
+ * extends abstract clss == extends abstatract class extends object
 
 ## 处理错误，Exception, == null, Not found.
 ## Class object-oriented.
