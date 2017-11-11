@@ -82,6 +82,7 @@ res27: Int = 145
  * 看背后思想，发展历史。
  * 搞清楚语言内核
  * 和其他相关语言，对比分析
+ * 编译后指令的查看
  
 * 动态分析
  * Debug.
@@ -89,6 +90,11 @@ res27: Int = 145
  * Performance
  * 练习体会
  * 实际项目
+
+## Scala编译成了什么指令？
+* scalac -print
+* javap 
+
 
 ## 思想或者目标
 * 减少程序的复杂度，让编译器做更多工作。
@@ -215,6 +221,9 @@ object TryScala {
 ## 类型系统，面向对象
 ### 鸭子类型
 * https://dzone.com/articles/duck-typing-scala-structural
+
+### 继承trait
+* trait与抽象类?
 
 ## 处理错误，Exception, == null, Not found.
 ## Class object-oriented.
