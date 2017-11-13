@@ -252,7 +252,7 @@ object TryScala {
 
 ## 性能相关
 * CPS 或 continuation 类似GOTO, 复杂易错，但是可以提高性能。我认为，非框架或者语言开发者，不应该使用，以为易错和复杂。
- * http://blog.bruchez.name/2011/09/continuations-in-scala.html 有益于基于事件的编程。
+ * http://blog.bruchez.name/2011/09/continuations-in-scala.html 有益于基于事件的编程。 Contiunation 利用到了Closure.
 * 宏是编译期行为，也可以通过宏提高性能
 
 ## scalaz
