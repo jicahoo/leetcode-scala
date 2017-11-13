@@ -196,7 +196,7 @@ object Test1WithFilterLazy extends App {
   } 
 }
  ```
- * twitter scala school 列举了类型系统的相关主题：递归类型，结构类型
+ * twitter scala school 列举了类型系统的相关主题：递归类型，结构类型（其实就是鸭子类型，用到了反射，注意性能）
  ```text
 Type & polymorphism basics
 Basic Types and type polymorphism, type inference, variance, bounds, quantification
