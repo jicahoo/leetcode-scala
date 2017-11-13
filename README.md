@@ -38,6 +38,7 @@ Leetcode scala
 ## 非常有用的资料
 * http://docs.scala-lang.org/tutorials/FAQ/index.html
 * http://docs.scala-lang.org/overviews/core/architecture-of-scala-collections.html 对于Scala Collection 架构的官方介绍。
+* https://twitter.github.io/scala_school
 
 ## 闭包
 * 闭包没什么，闭包可以做的事情，你创建个类一样，可以做。闭包，有些时候，你的函数依赖于外部变量，你就学要他。如果，不支持，写程序就比较麻烦。
