@@ -125,7 +125,8 @@ res27: Int = 145
 * 不用Break, 用takeWhile可以替代。
 * 递归的思想，函数编程更喜欢递归，正常情况下，C语言的递归也无副作用。递归的这种特征和函数编程很一致。是吗？
 
-## 2017/11/01 心得
+## exercism scala
+### 2017/11/01 心得
 * 今天，我又刷了题目http://exercism.io/tracks/scala/exercises/meetup, 记一下刷后感。
 * 在Debug的时候，发现IntelliJ IDEA可以在匿名函数处设置断点，譬如说，list.find(\_ > 0)，那么，就可以在 \_ > 0处设置断点。
 * Range.slice 和 List.slice 是不一样的，前者是lazy的，后者是eager的
@@ -150,7 +151,9 @@ object Test1WithFilterLazy extends App {
 
 }
 ```
-
+### lunh
+* http://exercism.io/exercises/scala/luhn/readme
+* Scala如何比较简单地实现这个功能：在一个List[Char]中，如果第一个元素的值为'0', 就去掉它？
 
 ## Scala中常用的缩写
 * x 单个元素，可能与数学有关。y=f(x)
