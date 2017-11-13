@@ -247,6 +247,10 @@ object TryScala {
 * 招人成本
 * 社区成熟度，问题解决的成本，主流语言的问题，很容易从网上找到答案。
 
+## 性能相关
+* CPS 或 continuation 类似GOTO, 复杂易错，但是可以提高性能。我认为，非框架或者语言开发者，不应该使用，以为易错和复杂。
+* 宏是编译期行为，也可以通过宏提高性能。
+
 ## 基于Scala构建的产品
 * Apache Spark让Scala名声大噪。Akka，用Actor Model构造高并发，容错，可伸缩的，自愈的，高性能的系统。
 * Twitter和Linkin用Scala构造出一些很不错了产品。 LinkedIn的消息系统Kafka （据说代码写的漂亮, 主要还是Java,30%是Scala, 不过，core是scala写的）, Twitter的RPC调用框架Finagle.
