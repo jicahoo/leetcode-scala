@@ -257,7 +257,6 @@ object TryScala {
 ## 单元测试
 * scalatest
 * scalacheck
-* scalamatch
 
 ## 基于Scala构建的产品
 * Apache Spark让Scala名声大噪。Akka，用Actor Model构造高并发，容错，可伸缩的，自愈的，高性能的系统。
