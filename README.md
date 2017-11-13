@@ -65,8 +65,11 @@ res27: Int = 145
 ## 模式匹配与ADT，偏函数，函数组合
 * Refer: https://pawelwlodarski.gitbooks.io/functional-programming/content/workshop_-_adt.html
 * 可以做模式匹配的类型：原始类型，case class, ADT. apply & unapply?
-* https://twitter.github.io/scala_school/pattern-matching-and-functional-composition.html CASE语句的本质是偏函数和函数组合(function compose)
-
+* https://twitter.github.io/scala_school/pattern-matching-and-functional-composition.html CASE语句的本质是偏函数和函数组合(function compose). 因为是偏函数，所以，case语句的语法是 case <sub_set_value_pattern> => <return_value>，符合函数的定义方式。(Int) => String
+```scala
+//一个函数定义的例子。
+val addOne:(Int) => Int = (e:Int) => e + 1
+```
 ## 概括Scala的资料
 * 前言: http://scala-lang.org/files/archive/spec/2.12/
 
