@@ -25,6 +25,7 @@ Leetcode scala
 * 不可变性
 * 闭包
 * Monad
+* 类型系统
 
 ## 代数数据类型
 * https://scalerablog.wordpress.com/2016/10/03/algrebraic-data-types-in-scala/
@@ -182,6 +183,13 @@ object Test1WithFilterLazy extends App {
         dest.set(i, src.get(i)); 
   } 
 }
+ ```
+ * twitter scala school 列举了类型系统的相关主题：递归类型，结构类型
+ ```text
+Type & polymorphism basics
+Basic Types and type polymorphism, type inference, variance, bounds, quantification
+Advanced types
+Advanced Types, view bounds, higher-kinded types, recursive types, structural types
  ```
 
 ## Map
