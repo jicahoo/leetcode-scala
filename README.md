@@ -71,6 +71,18 @@ res27: Int = 145
 //一个函数定义的例子。
 val addOne:(Int) => Int = (e:Int) => e + 1
 ```
+
+```scala
+//Twitter scala school的例子
+scala> val one: PartialFunction[Int, String] = { case 1 => "one" }
+one: PartialFunction[Int,String] = <function1>
+
+scala> one.isDefinedAt(1)
+res0: Boolean = true
+
+scala> one.isDefinedAt(2)
+res1: Boolean = false
+```
 ## 概括Scala的资料
 * 前言: http://scala-lang.org/files/archive/spec/2.12/
 
