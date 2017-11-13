@@ -32,6 +32,7 @@ Leetcode scala
 
 ## Scala异步编程
 * https://alexn.org/blog/2017/01/30/asynchronous-programming-scala.html
+* https://github.com/scala/scala-async
 
 
 ## 代数数据类型
