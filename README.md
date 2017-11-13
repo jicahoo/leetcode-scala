@@ -27,6 +27,13 @@ Leetcode scala
 * Monad
 * 类型系统
 
+## Scala 最佳实践
+* https://github.com/alexandru/scala-best-practices
+
+## Scala异步编程
+* https://alexn.org/blog/2017/01/30/asynchronous-programming-scala.html
+
+
 ## 代数数据类型
 * https://scalerablog.wordpress.com/2016/10/03/algrebraic-data-types-in-scala/
 * https://wiki.haskell.org/Algebraic_data_type
@@ -280,7 +287,7 @@ object TryScala {
 * CPS 或 continuation 类似GOTO, 复杂易错，但是可以提高性能。我认为，非框架或者语言开发者，不应该使用，以为易错和复杂。
  * http://blog.bruchez.name/2011/09/continuations-in-scala.html 有益于基于事件的编程。 Contiunation 利用到了Closure.
  * CPS, continuation,好像已经过时(2017/11/13)，或者说没人维护，也没什么人使用。已被scala.async所替代，https://github.com/scala/scala-async。
- 注意方向，**不要花在过时技术上**， 浪费时间。
+ 注意方向，**不要花在过时技术上**， 浪费时间。Akka用过CPS，但是已经被废弃。
 * 宏是编译期行为，也可以通过宏提高性能
 
 ## scalaz
