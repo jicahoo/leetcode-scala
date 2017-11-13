@@ -186,7 +186,7 @@ object Test1WithFilterLazy extends App {
 * 函数可以作为参数。
 * compose 函数和函数间的运算。
 * curry. 函数可以按参数分解或者说降维，编程某些参数固定的函数。
-* 偏函数。可以和currying类比， currying是去掉一个维度，偏函数是减去一些参数类型值的集合的子集。
+* 偏函数。可以和currying类比， currying是去掉一个维度，偏函数是减去一些参数类型值的集合的子集。case语句的本质就是偏函数。
 * 举个例子，
 ```scala
 object TryScala {
