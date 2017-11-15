@@ -5,6 +5,7 @@ Leetcode scala
 * Scala是如何看待编程和其中的问题的。Scala的目标，Scala的手段，Scala的效果。
 * 能在编译期做的约束和检查，就不要延迟到运行时。例如，ADT
 
+## 自己一点练习，总结理论，是不是有些效率低下，还是找一本书（无论线上和线下）通读一遍，效率更高，做练习，搜索，通读，做练习，搜索，通读，不断演进，学得更快。
 
 # Scala warm-up:
 * https://jaxenter.com/cheat-sheet-complete-guide-scala-136558.html
@@ -258,7 +259,31 @@ object TryScala {
 ## 类型系统，面向对象
 ### 鸭子类型
 * https://dzone.com/articles/duck-typing-scala-structural
+### 协变
+* https://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science)
+* 协变，逆变的意义:
+    * 类型兼容（安全），代码重用。
+    * 什么叫类型兼容？ 从某个视角看，你就是这个类型。比如说，有个方法的签名是 int cacluateWeight(Animal a).如果Cat extends Animal. 那么方法的调用cacluateWeight(new Cat())是能够运行的。 A<:B的内涵就是 如果在某些计算逻辑中，使用了B的引用，如果把这些B的引用换成A的引用，也是合理的。在讨论协变或者逆变的时候，当你被眼花缭乱的解释或者理论说明绕晕时，你就可以使用这个基本原则。
+   * 此处，我们就是用这个基本原则，去看一下函数的参数的逆变和返回值的协变。在下面的例子中，childFunc是可以赋值给parentFunc, childFunct可以从parentFunc的类型的视角看待，也就是Function1[Animal, Rectangle] <: Function1[Cat, Shape]. 根据上面的原则，我们可以人为，在某些计算逻辑中，使用了parentFunc的引用，我们把它换成childFunc的引用也是合理的。为什么合理呢？ 先从入参看，在替换之前，入参传入的肯定都是Cat类或者Cat子类的实例。如果替换成了childFunc, childFunc是以Animal这个视角来处理传入的实例的，而Cat或者Cat子类肯定能够以Animal的视角来处理，因为Cat的子类<:Cat <: Animal。所以，说函数类型的入参是逆变的。为什么不是协变的？协变是行不通的。假如是协变的，那么,就有结论Function1[Cat, Rectangle] <: Function1[Animal, Shape], 再套用上面的方法，如果某段逻辑使用了类型为Function1[Animal, Shape]的引用，我们尝试把这些引用替换为Function1[Cat,Rectangle]，那么，在替换之前，传入的参数是Animal的类型，替换之后是入参是Cat的类型，是按照Cat的视角去处理的，因为Cat是Animal的子类，Cat可能具有一些Animal并没有的方法，而Function[Cat,Rectangle]类新的函数正好调用这些Animal不具有的方法，那么，实际传入的可能是Animal类的实例，也可能是Cat的实例，也可能是Animal其他的子类的实例，如果传入的是非Cat的实例，那么，Function1[Cat,Rectangle]会调用入参类型所不具有而Cat具有的方法，这肯定是不安全的，所以说，函数的入参不可能是协变的，入参必须是逆变的。返回值的协变，可以用同样的方法分析出来。
 
+```scala
+private class Animal
+
+private class Cat extends Animal
+
+private class Shape
+
+private class Rectangle extends Shape
+
+object App {
+
+  def main(args: Array[String]):Unit = {
+    var parentFunc: Cat => Shape = (c: Cat) => new Shape
+    var childFunc: Animal => Rectangle = (a: Animal) => new Rectangle
+    parentFunc = childFunc
+  }
+}
+```
 ### 继承trait
 * trait与抽象类? (https://stackoverflow.com/questions/32958972/trait-vs-abstract-class-in-scala) Try scalac -print
  * extends trait  == extends object with trait
