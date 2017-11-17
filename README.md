@@ -272,6 +272,46 @@ object TryScala {
  * 类型兼容（安全），代码重用（灵活）,有时候，协变或逆变不可行或者带来过多的复杂度，让编程人员无所适从，会做成不变invariant. Set[T]就不变的。Set[Nothing] <: Set[T] 是不成立的。
  * 什么叫类型兼容？ 从某个视角看，你就是这个类型。比如说，有个方法的签名是 int cacluateWeight(Animal a).如果Cat extends Animal. 那么方法的调用cacluateWeight(new Cat())是能够运行的。 A<:B的内涵就是 如果在某些计算逻辑中，使用了B的引用，如果把这些B的引用换成A的引用，也是合理的。在讨论协变或者逆变的时候，当你被眼花缭乱的解释或者理论说明绕晕时，你就可以使用这个基本原则。
    * 此处，我们就是用这个基本原则，去看一下函数的参数的逆变和返回值的协变。在下面的例子中，childFunc是可以赋值给parentFunc, childFunct可以从parentFunc的类型的视角看待，也就是Function1[Animal, Rectangle] <: Function1[Cat, Shape]. 根据上面的原则，我们可以人为，在某些计算逻辑中，使用了parentFunc的引用，我们把它换成childFunc的引用也是合理的。为什么合理呢？ 先从入参看，在替换之前，入参传入的肯定都是Cat类或者Cat子类的实例。如果替换成了childFunc, childFunc是以Animal这个视角来处理传入的实例的，而Cat或者Cat子类肯定能够以Animal的视角来处理，因为Cat的子类<:Cat <: Animal。所以，说函数类型的入参是逆变的。为什么不是协变的？协变是行不通的。假如是协变的，那么,就有结论Function1[Cat, Rectangle] <: Function1[Animal, Shape], 再套用上面的方法，如果某段逻辑使用了类型为Function1[Animal, Shape]的引用，我们尝试把这些引用替换为Function1[Cat,Rectangle]，那么，在替换之前，传入的参数是Animal的类型，替换之后是入参是Cat的类型，是按照Cat的视角去处理的，因为Cat是Animal的子类，Cat可能具有一些Animal并没有的方法，而Function[Cat,Rectangle]类新的函数正好调用这些Animal不具有的方法，那么，实际传入的可能是Animal类的实例，也可能是Cat的实例，也可能是Animal其他的子类的实例，如果传入的是非Cat的实例，那么，Function1[Cat,Rectangle]会调用入参类型所不具有而Cat具有的方法，这肯定是不安全的，所以说，函数的入参不可能是协变的，入参必须是逆变的。返回值的协变，可以用同样的方法分析出来。
+* I learned how to write funtion in covariant type from (http://exercism.io/tracks/scala/exercises/custom-set)
+```scala
+case class CustomSet[+A](list: List[A]) {
+  def union[B >: A](that: CustomSet[B]): CustomSet[B] = {
+    //Here, A是协变的, 而that需要逆变，
+    CustomSet(list.toSet.union(that.list.toSet).toList)
+  }
+
+  def difference[B >: A](that: CustomSet[B]): CustomSet[B] = {
+    CustomSet(list.toSet.diff(that.list.toSet).toList)
+  }
+
+  def intersection[B >: A](that: CustomSet[B]): CustomSet[B] = {
+    CustomSet(that.list.toSet.intersect(list.toSet).toList)
+  }
+
+  def insert[B >: A](e: B): CustomSet[B] = {
+    CustomSet(List(e).toSet.union(list.toSet).toList)
+  }
+
+  def disjoint[B >: A](that: CustomSet[B]): Boolean = {
+    that.list.toSet.intersect(list.toSet).isEmpty
+  }
+
+  def subset[B >: A](that: CustomSet[B]): Boolean = {
+    that.list.toSet.intersect(list.toSet) == list.toSet
+  }
+
+  def member[B >: A](e: B): Boolean = {
+    Set(e).intersect(list.toSet).nonEmpty
+  }
+
+  def empty: Boolean = list.isEmpty
+
+  def myEqual[B >: A](that: CustomSet[B]): Boolean = {
+    that.list.toSet == list.toSet
+  }
+
+}
+```
 
 ```scala
 private class Animal
