@@ -93,7 +93,7 @@ scala> one.isDefinedAt(2)
 res1: Boolean = false
 ```
 * 模式匹配支持按那些维度匹配
- * 类型: case x: List[_] => xxx
+ * 类型: case x: List[_] => xxx (http://exercism.io/tracks/scala/exercises/flatten-array)
  * Predicate: case x if predicate(x) => xxx
  * 值： case 1 => xxx
 
