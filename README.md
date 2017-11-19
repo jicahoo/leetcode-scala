@@ -352,6 +352,7 @@ object App {
       ExecutionContext.fromExecutor(fixedThreadPool) 
     }
     ```
+    * 对于有依赖关系(flatMap)的Future，如何让它们并发执行？将每个Future都复制到某个变量，然后再用flatMap粘合在一起。(Related blog)[http://rerun.me/2016/06/12/scala-futures-3-combinators-and-async/]
 * Actor (Akka)
     * 并发与并行的更深刻的区分: http://chimera.labs.oreilly.com/books/1230000000929/ch01.html#sec_terminology
         * 并行只为了效率
