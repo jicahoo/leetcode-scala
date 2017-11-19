@@ -339,6 +339,13 @@ object App {
 ## 并发
 * synchronized.this 
 * https://twitter.github.io/scala_school/concurrency.html
+### Scala中的并发高层概念
+* Future: 
+ * http://rerun.me/2016/05/29/scala-notes-futures-1/
+* Actor (Akka)
+* 并发与并行的更深刻的区分: http://chimera.labs.oreilly.com/books/1230000000929/ch01.html#sec_terminology
+ * 并行的，确定的
+
 
 ## 处理错误，Exception, == null, Not found.
 ## Class object-oriented.
