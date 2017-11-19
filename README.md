@@ -348,7 +348,11 @@ object App {
         * 并发为了一个计算资源服务多个客户，如Web服务器，数据库，不同客户的执行逻辑一般都睡相互交织(Interleaved)
         * 可以好好理解里面的这段话
         ```text
-        While parallel programming is concerned only with efficiency, concurrent programming is concerned with structuring a program that needs to interact with multiple independent external agents (for example, the user, a database server, and some external clients). Concurrency allows such programs to be modular; the thread that interacts with the user is distinct from the thread that talks to the database. In the absence of concurrency, such programs have to be written with event loops and callbacks, which are typically more cumbersome and lack the modularity that threads offer.
+        While parallel programming is concerned only with efficiency, concurrent programming is concerned with structuring a program 
+        that needs to interact with multiple independent external agents (for example, the user, a database server, and some external 
+        clients). Concurrency allows such programs to be modular; the thread that interacts with the user is distinct from the thread 
+        that talks to the database. In the absence of concurrency, such programs have to be written with event loops and callbacks, 
+        which are typically more cumbersome and lack the modularity that threads offer.
         ```
 
 
