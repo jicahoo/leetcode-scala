@@ -350,8 +350,7 @@ object App {
     implicit lazy val fixedThreadPoolExecutionContext: ExecutionContext = {  
     val fixedThreadPool: ExecutorService = Executors.newFixedThreadPool(Runtime.getRuntime.availableProcessors * 2) //or some fixed number
     ExecutionContext.fromExecutor(fixedThreadPool)
-}
-    ```
+}```
 * Actor (Akka)
     * 并发与并行的更深刻的区分: http://chimera.labs.oreilly.com/books/1230000000929/ch01.html#sec_terminology
         * 并行只为了效率
