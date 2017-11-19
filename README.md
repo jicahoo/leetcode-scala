@@ -346,14 +346,9 @@ object App {
     * 并发与并行的更深刻的区分: http://chimera.labs.oreilly.com/books/1230000000929/ch01.html#sec_terminology
         * 并行只为了效率
         * 并发为了一个计算资源服务多个客户，如Web服务器，数据库，不同客户的执行逻辑一般都睡相互交织(Interleaved)
-        * 可以好好理解里面的这段话
-        ```text
-        While parallel programming is concerned only with efficiency, concurrent programming is concerned with structuring a program 
-        that needs to interact with multiple independent external agents (for example, the user, a database server, and some external 
-        clients). Concurrency allows such programs to be modular; the thread that interacts with the user is distinct from the thread 
-        that talks to the database. In the absence of concurrency, such programs have to be written with event loops and callbacks, 
+        * 可以好好理解里面的这段话: While parallel programming is concerned only with efficiency, concurrent programming is concerned with structuring a program that needs to interact with multiple independent external agents (for example, the user, a database server, and some external clients). Concurrency allows such programs to be modular; the thread that interacts with the user is distinct from the thread that talks to the database. In the absence of concurrency, such programs have to be written with event loops and callbacks, 
         which are typically more cumbersome and lack the modularity that threads offer.
-        ```
+        * 并发用线程，模块化；没有并发，就是node.js, 一个线程(event loop), 加上各种callback, 模块化差。
 
 
 ## 处理错误，Exception, == null, Not found.
