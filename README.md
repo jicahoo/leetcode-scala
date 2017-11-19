@@ -344,7 +344,8 @@ object App {
  * http://rerun.me/2016/05/29/scala-notes-futures-1/
 * Actor (Akka)
 * 并发与并行的更深刻的区分: http://chimera.labs.oreilly.com/books/1230000000929/ch01.html#sec_terminology
- * 并行的，确定的
+ * 并行只为了效率
+ * 并发为了一个计算资源服务多个客户，如Web服务器，数据库，不同客户的执行逻辑一般都睡相互交织(Interleaved)
 
 
 ## 处理错误，Exception, == null, Not found.
