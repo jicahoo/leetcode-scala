@@ -345,13 +345,13 @@ object App {
     * http://rerun.me/2016/06/05/scala-notes-futures-2-promises/
     * http://rerun.me/2016/06/12/scala-futures-3-combinators-and-async/
     * Future与Promise? Future是编程者需要直接交互的，而一般情况下，编程者不需要操作Promise. Future是用来读取异步计算逻辑的结果的，Promise是负责将异步执行结果写入Future的。
-    * 如何配置Future的执行环境(线程池)? Future.apply[T](body: ⇒ T)(implicit executor: ExecutionContext)的第二个参数, 好像要用implicit机制：
-    ```scala
+    * 如何配置Future的执行环境(线程池)? Future.apply[T](body: ⇒ T)(implicit executor: ExecutionContext)的第二个参数, 好像要用implicit机制
+    ```scala
     implicit lazy val fixedThreadPoolExecutionContext: ExecutionContext = {  
     val fixedThreadPool: ExecutorService = Executors.newFixedThreadPool(Runtime.getRuntime.availableProcessors * 2) //or some fixed number
     ExecutionContext.fromExecutor(fixedThreadPool)
 }
-     ```
+    ```
 * Actor (Akka)
     * 并发与并行的更深刻的区分: http://chimera.labs.oreilly.com/books/1230000000929/ch01.html#sec_terminology
         * 并行只为了效率
