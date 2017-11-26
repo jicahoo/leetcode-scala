@@ -27,6 +27,7 @@ Leetcode scala
 * 闭包
 * Monad
 * 类型系统
+* Implicits
 
 ## Scala 最佳实践
 * https://github.com/alexandru/scala-best-practices
@@ -362,6 +363,12 @@ object App {
         * 并发用线程，模块化；没有并发，就是node.js, 一个线程(event loop), 加上各种callback, 模块化差。
         * 并行与确定性编程模型，并发与非确定性编程, 各有优缺点。文章的结论，并行与并发结合。
 
+## Implicits
+* 
+
+## Ordering, Ordered
+* Ordering extends Comparator.
+* Ordered extends Comparable.
 
 ## 处理错误，Exception, == null, Not found.
 ## Class object-oriented.
