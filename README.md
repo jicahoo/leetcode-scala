@@ -98,6 +98,7 @@ res1: Boolean = false
  * 类型: case x: List[_] => xxx (http://exercism.io/tracks/scala/exercises/flatten-array)
  * Predicate: case x if predicate(x) => xxx
  * 值： case 1 => xxx
+* 有些时候，不一定因为case好用，就非要case展开，有些时候，是尽量避免展开的（例如Option), 相关题目：http://exercism.io/exercises/scala/binary-search-tree/readme
 
 
 ## 概括Scala的资料
@@ -368,8 +369,7 @@ object App {
 * 
 
 
-## Case 模式匹配
-* 有些时候，不一定因为case好用，就非要case展开，有些时候，是尽量避免展开的（例如Option), 相关题目：http://exercism.io/exercises/scala/binary-search-tree/readme
+
 
 ## Ordering, Ordered
 * Ordering extends Comparator.
