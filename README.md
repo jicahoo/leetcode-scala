@@ -362,6 +362,7 @@ object App {
         which are typically more cumbersome and lack the modularity that threads offer.
         * 并发用线程，模块化；没有并发，就是node.js, 一个线程(event loop), 加上各种callback, 模块化差。
         * 并行与确定性编程模型，并发与非确定性编程, 各有优缺点。文章的结论，并行与并发结合。
+* 相关题目
 
 ## Implicits
 * 
@@ -369,6 +370,7 @@ object App {
 ## Ordering, Ordered
 * Ordering extends Comparator.
 * Ordered extends Comparable.
+* 相关题目：http://exercism.io/exercises/scala/binary-search-tree/readme
 
 ## 处理错误，Exception, == null, Not found.
 ## Class object-oriented.
