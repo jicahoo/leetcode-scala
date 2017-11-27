@@ -367,6 +367,10 @@ object App {
 ## Implicits
 * 
 
+
+## Case 模式匹配
+* 有些时候，不一定因为case好用，就非要case展开，有些时候，是尽量避免展开的（例如Option), 相关题目：http://exercism.io/exercises/scala/binary-search-tree/readme
+
 ## Ordering, Ordered
 * Ordering extends Comparator.
 * Ordered extends Comparable.
@@ -382,6 +386,7 @@ object App {
 * metaprogramming
 * quasi-quotation
 * macro宏
+
 
 ## 工程性
 * 适合多人合作
