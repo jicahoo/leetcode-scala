@@ -458,6 +458,30 @@ add: (Int, Int) => Int = $$Lambda$1134/680072609@62a6a47e
 ```
  * 修饰类型参数： 有时候你会看到 [T:Ordering] [T >: Foo] [T <: Bar]
  * 表示运算符是左结合还是右结合。:+,:+.
+* List的++ 和 ::: , 可前可后。而::只能前。
+```scala
+scala> List(1,2,3) ++ List(1)
+res10: List[Int] = List(1, 2, 3, 1)
+
+scala> List(1,2,3) ++ List(4)
+res11: List[Int] = List(1, 2, 3, 4)
+
+scala> List(1,2,3) ::: List(4)
+res12: List[Int] = List(1, 2, 3, 4)
+
+scala> List(4) ::: List(1,2,3)
+res13: List[Int] = List(4, 1, 2, 3)
+
+scala> List(4) ++ List(1,2,3)
+res14: List[Int] = List(4, 1, 2, 3)
+
+scala> 4::List(1,2,3)
+res15: List[Int] = List(4, 1, 2, 3)
+
+scala> List(1,2,3)::4
+<console>:12: error: value :: is not a member of Int
+       List(1,2,3)::4
+```
 
 ## Effective Scala (from twitter)
 * http://twitter.github.io/effectivescala/
