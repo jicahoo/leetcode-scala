@@ -417,6 +417,48 @@ object App {
 没有买卖就没有杀害，没有对比就没有伤害。有对比，才能以批判的角度看待Scala。
 * List按下标获取元素。 Python更方便。list.head vs list[0], list.tail vs list[1:], list.last vs list[-1], list.init vs list[:-1].
 
+## 令人困惑的Scala
+* +运算. 
+ * Map的+运算是加入键值对。
+```scala
+scala> Map(1->2) + (3->4)
+res1: scala.collection.immutable.Map[Int,Int] = Map(1 -> 2, 3 -> 4)
+```
+
+ * List的+运算是字符串拼接。
+```scala
+scala> List(1,2,3) + 2
+<console>:12: error: type mismatch;
+ found   : Int(2)
+ required: String
+       List(1,2,3) + 2
+                     ^
+
+scala> List(1,2,3) + "x"
+res3: String = List(1, 2, 3)x
+```
+
+ * Scala在List的前后，加元素，你要思考两件事。用什么操作符，加的元素放前面还是放后面。
+```scala
+scala> List(1,2,3):+1
+res4: List[Int] = List(1, 2, 3, 1)
+
+scala> 4+:List(1,2,3)
+res5: List[Int] = List(4, 1, 2, 3)
+```
+
+* Scala中，冒号的用途
+ * 声明变量或者函数的类型
+```scala
+scala> val x:Int = 10
+x: Int = 10
+
+scala> val add: (Int,Int) => Int = (a,b) => a + b
+add: (Int, Int) => Int = $$Lambda$1134/680072609@62a6a47e
+```
+ * 修饰类型参数： 有时候你会看到 [T:Ordering] [T >: Foo] [T <: Bar]
+ * 表示运算符是左结合还是右结合。:+,:+.
+
 ## Effective Scala (from twitter)
 * http://twitter.github.io/effectivescala/
 * http://twitter.github.io/scala_school/ 
