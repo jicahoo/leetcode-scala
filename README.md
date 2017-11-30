@@ -483,6 +483,13 @@ scala> List(1,2,3)::4
        List(1,2,3)::4
 ```
 
+## 面向对象编程之访问修饰符
+* http://www.jesperdj.com/2016/01/08/scala-access-modifiers-and-qualifiers-in-detail/
+* Scala有包嵌套的概念，而Java没有。
+* Scala可以指定让谁看见 prive[xxx]，而Java没有，Java只是符合规则的类，就可以访问。
+* Scala消除了一个Java的奇怪设计，不相关的类可以访问某个类的protected成员。
+
+
 ## Effective Scala (from twitter)
 * http://twitter.github.io/effectivescala/
 * http://twitter.github.io/scala_school/ 
