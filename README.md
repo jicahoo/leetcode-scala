@@ -482,6 +482,11 @@ scala> List(1,2,3)::4
 <console>:12: error: value :: is not a member of Int
        List(1,2,3)::4
 ```
+* 无处不在的下划线_
+ * `list.map(_ + 2)`
+ * `def f[A](a: Pair[A,_])`
+ * import org.hello._
+ 
 
 ## 面向对象编程之访问修饰符
 * http://www.jesperdj.com/2016/01/08/scala-access-modifiers-and-qualifiers-in-detail/
