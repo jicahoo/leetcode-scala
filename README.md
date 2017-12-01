@@ -482,7 +482,7 @@ scala> List(1,2,3)::4
 <console>:12: error: value :: is not a member of Int
        List(1,2,3)::4
 ```
-* 无处不在的下划线_
+* 无处不在的下划线_ (scala underscore magic: https://stackoverflow.com/questions/8000903/what-are-all-the-uses-of-an-underscore-in-scala)
  * `list.map(_ + 2)`
  * `def f[A](a: Pair[A,_])`
  * import org.hello._
