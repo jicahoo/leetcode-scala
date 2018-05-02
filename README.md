@@ -75,7 +75,8 @@ res27: Int = 145
 * 纯函数没能力改变数据，或者引用一直在变的状态，但纯函数很强大，可以传来传去；为了能利用纯函数的强大和数据交互的需求，我需要一个闭包的概念。让纯函数带上状态飞，带上状态就是闭包， 可以standalone, 从而可以到处传递，可以按照函数式编程的方式，投放到各种计算框架中。
 
 ## 模式匹配与ADT，偏函数，函数组合
-* Refer: https://pawelwlodarski.gitbooks.io/functional-programming/content/workshop_-_adt.html
+* ADT与模式匹配介绍: https://pawelwlodarski.gitbooks.io/functional-programming/content/workshop_-_adt.html
+* **模式匹配官方文档:** https://www.scala-lang.org/files/archive/spec/2.11/08-pattern-matching.html
 * 可以做模式匹配的类型：原始类型，case class, ADT. apply & unapply?
 * https://twitter.github.io/scala_school/pattern-matching-and-functional-composition.html CASE语句的本质是偏函数和函数组合(function compose). 因为是偏函数，所以，case语句的语法是 case <sub_set_value_pattern> => <return_value>，符合函数的定义方式。(Int) => String
 ```scala
@@ -99,7 +100,7 @@ res1: Boolean = false
  * Predicate: case x if predicate(x) => xxx
  * 值： case 1 => xxx
 * 有些时候，不一定因为case好用，就非要case展开，有些时候，是尽量避免展开的（例如Option), 相关题目：http://exercism.io/exercises/scala/binary-search-tree/readme
-* **模式匹配大全:** https://www.scala-lang.org/files/archive/spec/2.11/08-pattern-matching.html
+
 
 
 ## 概括Scala的资料
