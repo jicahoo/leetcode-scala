@@ -5,7 +5,6 @@ Leetcode scala
 * Scala是如何看待编程和其中的问题的。Scala的目标，Scala的手段，Scala的效果。
 * 能在编译期做的约束和检查，就不要延迟到运行时。例如，ADT
 
-## 自己一点练习，总结理论，是不是有些效率低下，还是找一本书（无论线上和线下）通读一遍，效率更高，做练习，搜索，通读，做练习，搜索，通读，不断演进，学得更快。
 
 # Scala warm-up:
 * https://jaxenter.com/cheat-sheet-complete-guide-scala-136558.html
