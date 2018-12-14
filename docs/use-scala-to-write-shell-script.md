@@ -18,6 +18,13 @@ println(x !!)
 ```
 
 * 同时获取返回码和输出
-* TODO
+```scala
+import sys.process._
+var output = ""
+val logger = ProcessLogger(x => output += x)
+val status = Process("ls -l").!(logger)
+(status, output)
+```
 
 * 异常处理
+* TODO
