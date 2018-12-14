@@ -4,3 +4,20 @@
 import sys.process._
 val wordSize = "find . -name *.scala".!!.split("\n").flatMap( x => s"cat $x".!!.split("""\s+|\n""")).length
 ```
+
+* 将scala的字符串通过标准输入的形式传给命令。
+```scala
+import sys.process._
+val x = Process("xargs").#<(new ByteArrayInputStream("xxx".getBytes))
+println(x !!)
+```
+
+* 使用管道
+```scala
+("cat README.md" #| "grep 1" #| "wc -l").!!.trim
+```
+
+* 同时获取返回码和输出
+* TODO
+
+* 异常处理
