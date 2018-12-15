@@ -26,5 +26,18 @@ val status = Process("ls -l").!(logger)
 (status, output)
 ```
 
+* stdin,stdout and status
+* https://alvinalexander.com/scala/how-to-handle-stdout-stderr-external-system-commands-scala
+```scala
+import sys.process._
+
+val stdout = new StringBuilder
+val stderr = new StringBuilder
+val status = "ls -al FRED" ! ProcessLogger(stdout append _, stderr append _)
+
+println(status)
+println("stdout: " + stdout)
+println("stderr: " + stderr)
+```
 * 异常处理
 * TODO
