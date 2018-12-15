@@ -1,4 +1,8 @@
 # Use Scala to write shell script
+
+* A tool to use scala as script language
+* https://github.com/lihaoyi/Ammonite 作者是李光耀的孙子
+
 * 使用scala和命令行工具计算scala源文件的单词数量
 ```scala
 import sys.process._
