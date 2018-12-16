@@ -31,6 +31,9 @@ Leetcode scala
 ## Scala 最佳实践
 * https://github.com/alexandru/scala-best-practices
 
+## Scala 生态
+* https://index.scala-lang.org/
+
 ## Scala异步编程
 * https://alexn.org/blog/2017/01/30/asynchronous-programming-scala.html
 * https://github.com/scala/scala-async
